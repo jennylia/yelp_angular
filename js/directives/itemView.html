@@ -1,0 +1,18 @@
+
+<div class="container"> 
+	<div class="row">
+		<div class="col-md-4">
+			<a href="{{place.mobile_url}}" class="thumbnail">
+				<img ng-src="{{place.rating_img_url}}">
+				<img ng-src="{{place.image_url}}">
+			</a>
+		</div>
+		<div class="col-md-4">
+			<h4>{{place.name}}</h4>
+		</div>
+		<div class="col-md-4">
+			<h5>{{place.phone}}</h5>
+			<h6>{{place.location.address[0]}}</h6>
+		</div>
+	</div>
+</div>

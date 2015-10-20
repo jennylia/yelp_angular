@@ -1,0 +1,42 @@
+<html>
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Include the AngularJS library -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+</head>
+<body ng-app="yelpPoco">
+  <div class="container">
+  	<div class="jumbotron">
+      <h1>Food here in Poco</h1>
+      <p> There are food at Poco, and here they are</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div ng-controller="MainController">
+      <!-- <h2>{{data}}</h2> -->
+      <div ng-repeat="place in data">
+        <item-view place="place"></item-view>
+      <div>
+    </div>
+
+  </div>
+
+  
+
+
+  <!-- include -->
+  <!-- controllers -->
+  <script src="js/app.js"></script>
+  <script src="js/controllers/MainController.js"></script>
+
+  <!-- Directives -->
+  <script src="js/directives/itemView.js"></script>
+  <!-- Service -->
+  <script src="js/services/yelpFactory.js"></script>
+
+</body>
+
+</html>
